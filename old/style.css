@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Figtree", sans-serif;
+  border: #00ff00 solid 1px;
 }
 
 :root {
@@ -58,6 +59,7 @@ h1 {
 
 p {
   font-size: 1rem;
+  /* width: auto; */
 }
 
 .card-text {
@@ -65,13 +67,18 @@ p {
 }
 
 .card-status {
+  /* max-width: 5.125rem; */
   font-weight: 800;
   color: var(--dark-grey);
   font-size: 0.875rem;
+  /* display: inline-block; */
+  /* display: inline-flex; */
   background-color: var(--yellow-bg);
   padding: 4px 12px;
   border-radius: 4px;
   align-self: flex-start;
+  /* display: inline; */
+  /* text-align: center; */
 }
 
 .author {

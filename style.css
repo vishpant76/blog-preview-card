@@ -37,7 +37,17 @@ body {
   gap: 1.5rem;
   border: var(--dark-grey) solid 1px;
   border-radius: 1.25rem;
-  box-shadow: 6px 6px 0px var(--dark-grey);
+  box-shadow: 0.4rem 0.4rem 0 var(--dark-grey);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  box-shadow: 0.875rem 0.875rem 0 var(--dark-grey);
+}
+
+.blog-card:hover h1 {
+  color: var(--yellow-bg);
+  transition: color 0.3s ease-out;
 }
 
 .card-content {
@@ -48,16 +58,17 @@ body {
 
 time {
   color: var(--dark-grey);
-  font-size: 0.875rem;
+  font-size: clamp(0.75rem, 2vw, 0.875rem);
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
   color: var(--dark-grey);
+  transition: color 0.3s ease-in;
 }
 
 p {
-  font-size: 1rem;
+  font-size: clamp(0.875rem, 2vw, 1rem);
 }
 
 .card-text {
@@ -69,8 +80,8 @@ p {
   color: var(--dark-grey);
   font-size: 0.875rem;
   background-color: var(--yellow-bg);
-  padding: 4px 12px;
-  border-radius: 4px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25;
   align-self: flex-start;
 }
 

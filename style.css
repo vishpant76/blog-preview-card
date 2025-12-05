@@ -29,8 +29,8 @@ body {
 
 .blog-card {
   background-color: var(--white-bg);
-  max-width: 90vw;
   width: 24rem;
+  max-width: 90vw;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
